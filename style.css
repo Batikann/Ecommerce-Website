@@ -686,3 +686,135 @@ footer .install img {
     flex-direction: column;
   }
 }
+
+#shop-hero {
+  background-image: url("img/banner/b1.jpg");
+  height: 40vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 14px;
+}
+
+#shop-hero h2,
+#shop-hero p {
+  color: white;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+#pagination a {
+  color: white;
+  background-color: #088178;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+#prodetails {
+  display: flex;
+}
+
+#mainImg{
+  margin-bottom: 0.5rem;
+}
+
+#prodetails .single-pro-image {
+  flex: 40%;
+  margin-right: 50px;
+}
+
+.small-img-group {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+  flex: 50%;
+  padding-top: 30px;
+}
+
+#prodetails h6 {
+  font-size: 1.2rem;
+}
+
+#prodetails h4 {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+#prodetails .single-pro-details h2 {
+  margin-bottom: 1rem;
+}
+
+#prodetails .single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+#prodetails .single-pro-details select:focus{
+  outline: none;
+}
+
+#prodetails .single-pro-details input{
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+  outline: none;
+}
+
+#prodetails .single-pro-details button{
+  font-size: 16px;
+  padding: 15px 35px;
+  background-color: #088178;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#prodetails .single-pro-details span{
+  font-size: 1.2rem;
+  line-height: 1.2;
+  width: 100%;
+}
+
+.active-2{
+  border: 1px solid black;
+}
+
+
+@media(max-width:540px){
+    #prodetails{
+      flex-direction: column;
+
+    }
+
+    #prodetails .single-pro-image{
+      margin-right: 0;
+      flex: 100%;
+    }
+
+    #prodetails .single-pro-details{
+      flex: 100%;
+    }
+}

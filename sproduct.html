@@ -38,7 +38,7 @@
 
     <section id="prodetails" class="section-p1">
       <div class="single-pro-image">
-        <img src="img/products/f1.jpg" width="100%" id="mainImg" alt="" />
+      <img id="mainImg" src="img/products/f1.jpg" width="100%"  alt="" />
         <div class="small-img-group">
           <div class="small-img-col">
             <img
@@ -99,7 +99,20 @@
           head-turning package.
         </span>
       </div>
-      <div></div>
+      <div class="preview-box">
+        <div class="details">
+          <span id="closeIcon" class="icon fas fa-times"></span>
+        </div>
+        <div class="img-box">
+          <div class="slide prev">
+            <i class="fas fa-angle-left"></i>
+          </div>
+          <div class="slide next">
+            <i class="fas fa-angle-right"></i>
+          </div>
+          <img id="previewBox-img" src="" alt="">
+        </div>
+      </div>
     </section>
 
     <section id="product-1" class="section-p1">
@@ -260,9 +273,13 @@
         <img src="img/pay/pay.png" alt="" />
       </div>
     </footer>
+    <div class="shadow">
+      
+    </div>
 
 
     <script src="shop.js"></script>
     <script src="script.js"></script>
+    <script src="lightbox.js"></script>
   </body>
 </html>

@@ -12,9 +12,8 @@ window.onload = () => {
   for (let i = 0; i < gallery.length; i++) {
     let newIndex = i;
     let clickImgIndex;
-    gallery[i].onclick = () => {
+    mainImg.onclick = () => {
       clickImgIndex = newIndex;
-      console.log(newIndex);
       function preview() {
         let selectedImgUrl = gallery[newIndex].src;
         previewImg.src = selectedImgUrl;
@@ -41,7 +40,7 @@ window.onload = () => {
       nextBtn.onclick = () => {
         newIndex++;
 
-        if (newIndex >= 3) {
+        if (newIndex >= gallery.length-1) {
           nextBtn.style.display = "none";
           preview();
         } else {
@@ -51,13 +50,15 @@ window.onload = () => {
       };
       previewBox.classList.add("show");
       shadow.style.display="block"
+      document.querySelector("body").style.overflow="hidden";
     };
     closeBtn.onclick = () => {
       newIndex = clickImgIndex;
       nextBtn.style.display = "block";
       prevBtn.style.display = "block";
       previewBox.classList.remove("show");
-      shadow.style.display="none"
+      shadow.style.display="none";
+      document.querySelector("body").style.overflow="auto";
     };
   }
 };
